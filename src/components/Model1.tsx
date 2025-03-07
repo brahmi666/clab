@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ShopInterior from "./ShopInterior";
 import { ArrowLeft, Loader2 } from "lucide-react";
+import Model from "./Model";
 
 const Model1 = () => {
   const navigate = useNavigate();
@@ -36,7 +37,7 @@ const Model1 = () => {
         )}
 
         {/* Model Component */}
-        <ShopInterior onLoad={() => setLoading(false)} />
+        <Model onLoad={() => setLoading(false)} />
       </div>
     </div>
   );
